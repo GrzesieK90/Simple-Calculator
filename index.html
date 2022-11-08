@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div id="title"><h2>SIMPLE<br>CALCULATOR</h2></div>
+        <input type="text" id="input" placeholder="Input numbers"><br><br>
+        <button value="AC"class="button" id="clear" onclick="clearScreen()">AC</button>
+        <button value="BS" class="button" id="bsp" onclick="backspace()">BS</button>
+        <button value="PI" class="button" onClick="display(3.141592653589793)"">PI</button>
+        <button value="E" class="operator" onClick="display('2.718281828459045')">E</button><br>
+        <button value="**" class="operator" onClick="display('**')">POW</button>
+        <button value="(" class="button" onClick="display('(')">(</button>
+        <button value=")" class="button" onClick="display(')')">)</button>
+        <button value="/" class="operator" onClick="display('/')">/</button><br>
+        <button value="7" class="button" onClick="display('7')">7</button>
+        <button value="8" class="button " onClick="display('8')">8</button>
+        <button value="9" class="button" onClick="display('9')">9</button>
+        <button value="*" class="operator" onClick="display('*')">*</button><br>
+        <button value="4" class="button" onClick="display('4')">4</button>
+        <button value="5" class="button" onClick="display('5')">5</button>
+        <button value="6" class="button" onClick="display('6')">6</button>
+        <button value="-" class="operator" onClick="display('-')">-</button><br>
+        <button value="1" class="button" onClick="display('1')">1</button>
+        <button value="2" class="button" onClick="display('2')">2</button>
+        <button value="3" class="button" onClick="display('3')">3</button>
+        <button value="+" class="operator" onClick="display('+')">+</button><br>
+        <button value="0" class="button" onClick="display('0')">0</button>
+        <button value="00" class="button" onClick="display('00')">00</button>
+        <button value="." class="button" onClick="display('.')">.</button>
+        <button value= "=" class="button equal-sign" onClick="solve()">=</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
